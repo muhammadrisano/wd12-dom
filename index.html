@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+  <h1 id="title">helo world</h1>
+
+
+  <h3 id="title">bro....</h3>
+  <h4>my name is risano</h4>
+
+  <p class="content">saya ingin menjadi programmer yang handal</p>
+
+  <p class="content">saya menyukai bahsa pemrograman javascript</p>
+
+
+  <h4>my name is budi</h4>
+
+  <button class="btn">Simpan</button>
+  <button class="btn">Update</button>
+  
+  <div class="container">
+    <h1 id="helo">helo bro.. apakabar</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, voluptatum.</p>
+  </div>
+
+  <script>
+    // getElementById -> mengembalikan sebuat element
+    const title =  document.getElementById('title')
+    title.innerHTML = "halo bro...."
+    // console.log(title);
+
+    // getElemenetByClassName -> mengembalikan html collection
+    const content = document.getElementsByClassName('content')
+    // for(let i = 0; i<content.length; i++){
+    //   console.log(content[i]);
+    // }
+
+
+    // getElementByTagName => mengembalikan html collection
+      const subTitle = document.getElementsByTagName('h4')
+      // console.log(subTitle);
+
+      // querySelector => mengembalikan sebuah element
+      const elBtn = document.querySelector('.btn')
+      // console.log(elBtn);
+
+      // querySelectorAll => mengembalikan nodeList
+      // const semuaBtn = document.querySelectorAll('.btn') 
+      // // console.log(semuaBtn);
+
+      // semuaBtn.forEach((item)=>{
+      //   item.style.backgroundColor = "orange"
+      // })
+
+      const semuaBtn = document.getElementsByClassName('btn') 
+
+         for(let i = 0; i<semuaBtn.length; i++){
+          semuaBtn[i].style.backgroundColor = "orange"
+        }
+      
+    const elContainer = document.querySelector('.container')
+
+    const elHelo =  elContainer.querySelector('.helo')
+    // console.log(elHelo);
+    // elHelo.style.color = "orange"
+
+  </script>
+</body>
+</html>

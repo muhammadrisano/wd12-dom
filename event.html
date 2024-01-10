@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">belajar memberikan event dijavascript</h1>
+    <button id="btn">simpan</button>
+    <script>
+      // const handleSimpan = ()=>{
+      //   const elTitle = document.getElementById('title')
+      //   elTitle.style.color = "red"
+      // }
+
+      // const handleReset = ()=>{
+      //   const elTitle = document.getElementById('title')
+      //   elTitle.style.color = "black"
+      // }
+
+
+      // element method
+      // document.getElementById("btn").onclick = function () {
+      //   const elTitle = document.getElementById("title");
+      //   elTitle.style.color = "red";
+      // };
+
+        // addEventListener
+
+        document.getElementById("btn").addEventListener('click', function(){
+          const elTitle = document.getElementById("title");
+          elTitle.style.color = "red";
+      // };
+        })
+    </script>
+  </body>
+</html>
